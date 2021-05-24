@@ -6,7 +6,7 @@ const app = express();
 
 // Serve only the static files form the dist directory
 //app.use(express.static(__dirname + '/dist/landing-page-inkabot-heroku'));
-app.use(express.static(__dirname + '/dist/landing-page-inkabot-heroku'));
+app.use(express.static(path.join(__dirname + '/dist/landing-page-inkabot-heroku')));
 
 
 app.get('/*', function(req, res){
