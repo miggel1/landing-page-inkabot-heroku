@@ -48,3 +48,16 @@ h3.titulo {
     font-size: 28px;
     font-weight: bold;
 }
+
+.centered {
+    justify-content: center;
+  }
+
+.componentPadding{
+    padding: 4px 0px;
+}
+
+.botonCentro{
+    display: flex;
+    justify-content: center;
+}

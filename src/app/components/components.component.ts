@@ -19,11 +19,6 @@ export class ComponentsComponent implements OnInit {
     date: {year: number, month: number};
     model: NgbDateStruct;
 
-
-
-
-
-
     //constructor( private renderer : Renderer2) {}
     isWeekend(date: NgbDateStruct) {
         const d = new Date(date.year, date.month - 1, date.day);

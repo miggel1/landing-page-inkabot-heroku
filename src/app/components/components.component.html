@@ -251,84 +251,62 @@
             </div>
             <!-- <div class="moving-clouds" style="background-image: url('assets/img/clouds.png'); "></div>    -->
         </div>
-        
-        
 
-        
         <div id="contactos" class="section section-image section-login" style="background-image: url('assets/img/login-image.jpg');">
-            
-            
             <div class="container">
-                <div class="row">
+                <div class="row centered">
                     <div class="col-lg-4 col-md-6 col-sm-12 ml-auto mr-auto">
-                        <div class="card card-register">
-                            <h3 class="title">Contáctanos</h3>
+                        
+                            <div class="card card-register">
+                                <h3 class="title">Contáctanos</h3>
 
-                           
-                            <div class="social-line text-center">
-                                <a href="https://www.google.com/" class="btn btn-neutral btn-facebook btn-just-icon">
-                                    <i class="fa fa-facebook-square"></i>
-                                </a>
-                            </div>
-                            <br>
+                            
+                                <div class="social-line text-center">
+                                    <a href="https://www.google.com/" class="btn btn-neutral btn-facebook btn-just-icon">
+                                        <i class="fa fa-facebook-square"></i>
+                                    </a>
+                                </div>
+                                <br>
 
-                            <div>
-                                <form [formGroup]="form" method="post" (ngSubmit)="onSubmit()">
-                                    <div class="form-group">
-                                        <input type="text" [formControl]="name" placeholder="Ingresa tu nombre completo."  class="form-control"  required/>
-                                        <error class="error" *ngIf="name.invalid">Por favor ingresa tu nombre</error>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" [formControl]="email" placeholder="Ingresa un correo valido."  class="form-control"  required/>
-                                        <error class="error" *ngIf="email.invalid">Por favor ingresa un correo valido.</error>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" [formControl]="phone" placeholder="Ingresa tu # de celular."  class="form-control"   required/>
-                                        <error class="error" *ngIf="phone.invalid">Por favor ingresa tu número de celular.</error>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" [formControl]="empresa" placeholder="Ingresa el nombre de tu empresa."  class="form-control"/>
-                                    </div>
-                                    <div class="form-group">
-                                        <textarea rows="3" cols="40" [formControl]="message" placeholder="Ingresa tu mensaje." class="form-control"></textarea>
-                                    </div>    
-                                                            
-                                    <button [disabled]="isLoading" class="btn btn-primary" type="submit">Enviar</button>
-                                    <input [formControl]="honeypot" type="hidden" />
-                                    <div [ngClass]="!submitted? 'hidden' : 'visible'" class="center-text">
-                                      <span>{{responseMessage}}</span>
-                                    </div>
-                                </form>
-                            </div>
-                            <!---
-                            <div class="form-group">
-                                <input type="text" placeholder="Ingresa tu nombre completo."  class="form-control" name="name" [(ngModel)]="name" required/>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" placeholder="Ingresa tu # de celular."  class="form-control" name="name" [(ngModel)]="name" required/>
-                            </div>
-                            <div class="form-group">
-                                <input name="emailaddress" placeholder="Ingresa tu correo." class="form-control" type="email" name="email" [(ngModel)]="email" required/>
-                            </div>
-                            <div class="form-group">
-                                <input name="text" placeholder="Ingresa el nombre de tu empresa." class="form-control" type="name" name="email" [(ngModel)]="email" required/>
-                            </div>
-                            <div class="form-group">
-                                <textarea rows="4" cols="40" placeholder="Ingresa tu mensaje." class="form-control" name="message" [(ngModel)]="message" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary" [disabled]="!contactForm.valid">Enviar</button>    
-                            -->
+                                <div>
+                                    <form [formGroup]="form" method="post" (ngSubmit)="onSubmit()">
+                                        <div class="form-group componentPadding">
+                                            <input type="text" [formControl]="name" placeholder="Ingresa tu nombre completo."  class="form-control"  required/>
+                                            <error class="error" *ngIf="name.invalid">Por favor ingresa tu nombre</error>
+                                        </div>
+                                        <div class="form-group componentPadding">
+                                            <input type="text" [formControl]="email" placeholder="Ingresa un correo valido."  class="form-control"  required/>
+                                            <error class="error" *ngIf="email.invalid">Por favor ingresa un correo valido.</error>
+                                        </div>
+                                        <div class="form-group componentPadding">
+                                            <input type="text" [formControl]="phone" placeholder="Ingresa tu # de celular."  class="form-control"   required/>
+                                            <error class="error" *ngIf="phone.invalid">Por favor ingresa tu número de celular.</error>
+                                        </div>
+                                        <div class="form-group componentPadding">
+                                            <input type="text" [formControl]="empresa" placeholder="Ingresa el nombre de tu empresa."  class="form-control"/>
+                                        </div>
+                                        
+                                        <div class="form-group componentPadding">
+                                            <textarea rows="3" cols="40" [formControl]="message" placeholder="Ingresa tu mensaje." class="form-control"></textarea>
+                                        </div>    
+                                        
+                                        <div class="botonCentro">
+                                            <button [disabled]="isLoading" class="btn btn-primary" type="submit">Enviar</button>
+                                            <input [formControl]="honeypot" type="hidden" />
+                                            <div [ngClass]="!submitted? 'hidden' : 'visible'" class="center-text">
+                                            <span>{{responseMessage}}</span>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            
 
-
-
+                            
                         </div>
                     </div>
                 </div>
             </div>
-            
-
         </div>
+
         
-        
-  
 </div>
